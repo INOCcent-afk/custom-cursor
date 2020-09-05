@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  overflow: hidden;
+}
+body {
+  font-family: sans-serif;
+  cursor: none;
+}
+
+nav {
+  height: 10vh;
+  width: 100%;
+  background: #080707;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: all 1s ease;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+.nav-links li {
+  padding: 10px 30px;
+  z-index: 2;
+}
+
+.front-cover {
+  height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 15%;
+}
+
+.front-cover-p {
+  padding: 0px 30px;
+  font-size: 35px;
+  font-style: italic;
+}
+
+.cursor {
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  border-radius: 50%;
+  background: transparent;
+  border: 3px solid rgb(255, 255, 255);
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+  transition-property: background, transform;
+  transform-origin: 100% 100%;
+  pointer-events: none;
+  z-index: 1;
+  backdrop-filter: grayscale();
+}
+
+.link-grow {
+  transform: scale(2);
+  background: #111;
+  border: 3px solid #ff0303;
+}
+
+.hovered-link {
+  color: #fff;
+}
+
+.front-cover-appear {
+  background: #111;
+  color: #fff;
+}
+
+.new-nav {
+  background: #fff;
+  color: #080707;
+}
+
+.another-cover {
+  transition: all 1s ease;
+}
+
+.mouseCursorImage {
+  width: 400px;
+  height: 400px;
+  background-image: url("images/pexels-photo-1845208.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  opacity: 0.9;
+  transform-origin: 100% 100%;
+  pointer-events: none;
+  z-index: 1;
+  display: none;
+}
+
+.overflow {
+  overflow: hidden;
+  width: 500vw;
+}
+.image {
+  transition: all 1s ease;
+  transform-origin: center;
+}
